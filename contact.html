@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT-PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logo.png" width="150px" height="50px"></a>
+          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="product.html">Collection</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex">
+          <!-- Search Bar -->
+          <div class="input-group ">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for products...">
+            <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+        </div>
+      </div>
+   <!-- Search Bar -->
+          </form>
+          <div class="text-white p-2">
+            <a class="p-2" data-bs-toggle="modal" data-bs-target="#addtocartmodal">
+              <i class=" icon fa-solid fa-cart-shopping"></i>
+          </a> 
+            <a class="p-2" data-bs-toggle="modal" data-bs-target="#usermodal">
+                <i class=" icon fa-regular fa-user"></i>
+            </a> 
+        </div>
+        </div>
+    </nav>
+<!-- NAVBAR -->
+
+<!-- search functiom -->
+<div id="productContainer" class="row">
+
+</div>
+<!-- search functiom -->
+
+ <!-- modal for add to cart -->
+ <div class="modal fade" id="addtocartmodal">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+              <h3>CART</h3>
+          </div>
+          <div class="modal-body bg-dark " id="cart-container">
+              
+          </div>
+          <div class="modal-footer bg-dark">
+              <a href="checkout.html" class="btn btn-primary">Check out </a>
+              <button class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- modal for add to cart -->
+
+<!-- CONTACT -->
+    <h2 class="text-dark m-3">CONTACT US</h2>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card border bg-dark">
+              <div class="card-body">
+                <h2 class="card-title text-center text-white mb-4">Message Us</h2>
+                <forxm>
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+<!-- CONTACT -->
+
+<!-- web info -->
+    <div class="container-fluid mt-5 border bg-dark">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Our Store</h3>
+            </div>
+            <div class="col-md-3"> 
+                <h5>Calamba citu, Laguna <br> Tel. 502-4203 <br>info @my-domain.com</h5>
+            </div>
+            <div class="col-md-3"> 
+                <h3>Opening hours</h3>
+            </div>
+            <div class="col-md-3"> 
+                <h5>Mon-Fri: 7am-10pm <br> Saturday: 8am-10pm <br>Sunday: 8am - 11pm</h5>
+            </div>
+        </div>
+    </div>
+<!-- web info -->
+
+<!-- web map -->
+    <div class="container-fluid m-3"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6685.090922776263!2d121.02311518260989!3d14.552344337089236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90526f9dc0b%3A0xb59dd255d3cddd6d!2sShangri-La!5e0!3m2!1sen!2sph!4v1713432432271!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<!-- web map -->
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white">
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Contact Info</h5>
+          <p>Email: info@example.com</p>
+          <p>Phone: +1234567890</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Social Media</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        <div class="col-md-3">
+          <h5>Subscribe Now</h5>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email">
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </div>
+          </form>     
+        </div>
+      </div>
+      
+      
+    </div>
+  </footer>
+<!-- FOOTER -->
+</body>
+<script>
+  // SEARCH FUNCTION
+function displayItems(itemsToDisplay) {
+const productContainer = document.getElementById('productContainer');
+productContainer.innerHTML = ''; // Clear previous results
+
+itemsToDisplay.forEach(item => {
+    const productDiv = document.createElement("div");
+    productDiv.classList.add("col-md-4", "mb-5");
+    productDiv.innerHTML = `
+    <h2 class="text-dark">suggestion</h2>
+            </div>
+            <div class="card bg-dark ">
+            <!-- card image top -->
+            <img src="${item.product_image}" class="card-img-top">
+            <!-- card image top -->
+
+            <!-- start of the card body -->
+            <div class="card-body g-2"">
+                <!-- Card title -->
+                <h3 class="card-title text-white">
+                    ${item.product_name}
+                </h3>
+                <!-- card title -->
+
+                <!-- card subtitle -->
+                <h5 class="card-subtitle text-white">
+                    <p class="card-text>₱${item.product_price}
+                    <p class="card-text">${item.product_desc}</p>
+                    <p class="card-text">Color: ${item.product_color}</p>
+                    <p class="card-text">Size: ${item.product_size}</p>
+                </h5>
+                <!-- card subtitle -->
+
+                <!-- Quick preview link -->
+                <a class="m-5" data-bs-toggle="modal" data-bs-target="#${item.product_no}modal">
+                    <h5>QUICK PREVIEW</h5>
+                </a>
+                <br>
+                <!-- Quick preview link -->
+
+                <!-- Add to Cart button -->
+                <button class="btn btn-secondary btn-add-to-cart" >Add to Cart</button>
+                <!-- Add to Cart button -->
+            </div>
+            <!-- end of the card body -->
+        </div>
+    `;
+
+    // Append the product to the product container
+    productContainer.appendChild(productDiv);
+});
+}
+
+// Event listener for the search button
+document.getElementById('searchButton').addEventListener('click', function() {
+const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+// Filter items based on the search term
+const filteredItems = items.filter(item => {
+    return item.product_name.toLowerCase().includes(searchTerm) ||
+            item.product_desc.toLowerCase().includes(searchTerm) ||
+            item.product_color.toLowerCase().includes(searchTerm) ||
+            item.product_size.toLowerCase().includes(searchTerm);
+});
+
+// Display the filtered items
+displayItems(filteredItems);
+});
+// SEARCH FUNCTION
+
+</script>
+
+<script>
+  // ADD TO CART MODAL
+// ADD TO CART MODAL
+// Retrieve the cart items from local storage, or initialize an empty array if no items are stored
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Add event listeners to "Add to Cart" buttons
+document.querySelectorAll(".btn-add-to-cart").forEach((button, index) => {
+    // Add click event listener to each "Add to Cart" button
+    button.addEventListener("click", () => {
+        // Get the selected item from the items array based on the button's index
+        const selectedItem = items[index];
+        // Add the selected item to the cart
+        cart.push(selectedItem);
+        // Update the display of the cart
+        updateCartDisplay();
+        // Show an alert message indicating successful addition to the cart
+        alert("ADDED SUCCESFULLY :)")
+        // Store the updated cart in local storage
+        localStorage.setItem('cart', JSON.stringify(cart));
+    });
+});
+
+// Function to update the display of the cart
+function updateCartDisplay() {
+    // Get the cart container element
+    const cartContainer = document.getElementById("cart-container");
+    // Clear the cart container
+    cartContainer.innerHTML = ""; 
+
+    // Initialize total price variable
+    let total = 0;
+
+    // Loop through each item in the cart
+    cart.forEach((item, index) => {
+        // Create a div element for each cart item
+        const cartItemDiv = document.createElement("div");
+        cartItemDiv.classList.add("cart-item");
+        cartItemDiv.innerHTML = `
+        <div class="row g-2">
+            <div class="col-md-4">
+                <img src="${item.product_image}" alt="${item.product_name}" class="img-fluid" height="200px" width="200">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title text-white">${item.product_name}</h5>
+                    <p class="card-text text-white">Price: ₱${item.product_price}</p>
+                    <p class="card-text text-white">${item.product_desc}</p>
+                    <button class="btn btn-danger btn-remove" data-index="${index}">Remove</button>
+                </div>
+            </div>
+        </div>
+        `;
+        // Append the cart item div to the cart container
+        cartContainer.appendChild(cartItemDiv);
+
+        // Update total price
+        total += item.product_price;
+    });
+
+    // Create a div element for displaying total price
+    const totalPriceDiv = document.createElement("div");
+    totalPriceDiv.innerHTML = `<h4 class="text-white">Total: ₱${total}</h4>`;
+    // Append total price div to the cart container
+    cartContainer.appendChild(totalPriceDiv);
+
+    // Add event listeners to "Remove" buttons
+    document.querySelectorAll(".btn-remove").forEach(button => {
+        // Add click event listener to each "Remove" button
+        button.addEventListener("click", (event) => {
+            // Get the index of the item to be removed from the cart
+            const index = event.target.dataset.index;
+            // Remove the item from the cart array
+            cart.splice(index, 1);
+            // Update the display of the cart
+            updateCartDisplay();
+            // Store the updated cart in local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        });
+    });
+}
+
+// Call the updateCartDisplay function to initially display the cart
+updateCartDisplay();
+// ADD TO CART MODAL
+</script> 
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="item.js"></script>
+<script src="main.js"></script>
+    
+</html>

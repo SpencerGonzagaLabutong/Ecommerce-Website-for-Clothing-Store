@@ -1,0 +1,53 @@
+.html, body {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+}
+
+* {
+    font-family: "Sniglet";
+    color: white;  
+}
+
+
+.custom-height {
+        height: 800px; 
+ }
+
+.icon {
+    font-size: 1.5em;
+}
+
+.card {
+    height: 100%; 
+
+}
+
+
+.border {
+    border: 20px solid #290226 ;
+    box-shadow: 20px 20px 20px;
+    border-radius: 20px;
+}
+
+/* services */
+.service {
+border: 1px solid #360234;
+border-radius: 5px;
+padding: 20px;
+margin-bottom: 20px;
+height: 230px;
+background-color: rgb(3, 3, 3);
+}
+/* services */
+
+#order-summary {
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+    width: fit-content;
+}
+
+.card-img-top {
+    height: 400px;
+}
+
+
